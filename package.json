@@ -1,0 +1,14 @@
+{
+  "name": "@jerry/react-native-template",
+  "version": "1.0.0",
+  "description": "Jerry's react-native-template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "template"
+  ],
+  "author": "Jerry <447180005@qq.com>",
+  "license": "MIT"
+}
