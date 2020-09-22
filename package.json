@@ -1,6 +1,6 @@
 {
-  "name": "@jerry/react-native-template",
-  "version": "1.0.0",
+  "name": "react-native-template-jerry",
+  "version": "1.0.1",
   "description": "Jerry's react-native-template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
