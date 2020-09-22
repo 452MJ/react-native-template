@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "podInstall": "npx pod-install",
+    "autoInstall": "yarn && jetify && npm run podInstall"
   },
   "dependencies": {
     "react": "16.13.1",
@@ -20,6 +22,7 @@
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
+    "jetifier": "^1.6.5",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.13.1"
   },
