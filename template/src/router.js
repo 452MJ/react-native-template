@@ -60,7 +60,7 @@ const renderTabBar = ({ state, descriptors, navigation }) => (
         >
           <Col
             style={{
-              width: apx(750 / Object.keys(tabLabels).length),
+              width: apx(750 / 2),
               height: apx(90),
               ...$styles.center,
             }}
