@@ -82,6 +82,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -91,12 +92,12 @@ apply from: "../../node_modules/react-native/react.gradle"
  * Upload all the APKs to the Play Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
-def enableSeparateBuildPerCPUArchitecture = false
+def enableSeparateBuildPerCPUArchitecture = true
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore.
@@ -132,15 +133,19 @@ android {
         applicationId "com.awesome"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        multiDexEnabled true
+        missingDimensionStrategy 'react-native-camera', 'general', 'mlkit'
+
+        def code = new Date().format("yyMMddHHmm")
+        versionCode code.toInteger();
     }
     splits {
         abi {
             reset()
             enable enableSeparateBuildPerCPUArchitecture
-            universalApk false  // If true, also generate a universal APK
-            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            universalApk true  // If true, also generate a universal APK
+//            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+            include "armeabi-v7a"
         }
     }
     signingConfigs {
@@ -154,13 +159,56 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            resValue "string", "app_name", '"Awesome dev"'
+            resValue "string", "CodePushDeploymentKey", '""'
+            applicationIdSuffix '.dev'
+            versionNameSuffix '1.0.0'
+//            resValue "string", "CodePushServerUrl", '""'
+        }
+        releaseBeta {
+            applicationIdSuffix ".beta"
+            versionNameSuffix '1.0.0'
+            resValue "string", "CodePushDeploymentKey", '""'
+//            resValue "string", "CodePushServerUrl", '""'
+            resValue "string", "app_name", '"Awesome Beta"'
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
+            // Add the following line if not already there
+            matchingFallbacks = ['release']
+        }
+        releaseProd {
+            applicationIdSuffix ".prod"
+            versionNameSuffix '1.0.0'
+            resValue "string", "CodePushDeploymentKey", '""'
+//            resValue "string", "CodePushServerUrl", '""'
+            resValue "string", "app_name", '"Awesome Prod"'
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            shrinkResources true
+            pseudoLocalesEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
+            // Add the following line if not already there
+            matchingFallbacks = ['release']
         }
         release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://reactnative.dev/docs/signed-apk-android.
+            applicationIdSuffix ".prod"
+            versionNameSuffix '1.0.0'
+            resValue "string", "CodePushDeploymentKey", '""'
+//            resValue "string", "CodePushServerUrl", '""'
+            resValue "string", "app_name", '"Awesome Prod"'
             signingConfig signingConfigs.debug
-            minifyEnabled enableProguardInReleaseBuilds
+            minifyEnabled true
+            shrinkResources true
+            pseudoLocalesEnabled true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
+            // Add the following line if not already there
+            matchingFallbacks = ['release']
         }
     }
 
@@ -176,6 +224,27 @@ android {
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
 
+            println variant
+            println output
+            def buildType = variant.buildType.name
+            def env = ''
+            if (buildType == 'debug'){
+                env = 'dev'
+            }
+            if (buildType == 'releaseBeta'){
+                env = 'beta'
+            }
+            if (buildType == 'releaseProd'){
+                env = 'prod'
+            }
+            if (buildType == 'release'){
+                env = 'prod'
+            }
+            def fileName = "${env}_${variant.versionName}${abi != null ? ".${abi}" : ''}.apk"
+            def outFile = output.outputFile
+            if (outFile != null && outFile.name.endsWith('.apk')) {
+                output.outputFileName = fileName  //  output.outputFile 改为 outputFileName
+            }
         }
     }
 }
