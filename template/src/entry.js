@@ -46,11 +46,11 @@ class Entry extends Component {
       setColor('#000000')
     }
 
-    const userInfo = (await $storage.getData($storage.KEYS.userInfo)) || {}
-    if (userInfo) {
-      // await $store.user.updateUserInfo()
-      // $store.user.setLogin(true)
-    }
+    // const userInfo = (await $storage.getData($storage.KEYS.userInfo)) || {}
+    // if (userInfo) {
+    //   // await $store.user.updateUserInfo()
+    //   // $store.user.setLogin(true)
+    // }
 
     await this.initLocale()
   }

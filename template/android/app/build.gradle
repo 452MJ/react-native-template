@@ -240,7 +240,7 @@ android {
             if (buildType == 'release'){
                 env = 'prod'
             }
-            def fileName = "${env}_${variant.versionName}${abi != null ? ".${abi}" : ''}.apk"
+            def fileName = "awesome_${env}_${variant.versionName}${abi != null ? ".${abi}" : ''}.apk"
             def outFile = output.outputFile
             if (outFile != null && outFile.name.endsWith('.apk')) {
                 output.outputFileName = fileName  //  output.outputFile 改为 outputFileName
