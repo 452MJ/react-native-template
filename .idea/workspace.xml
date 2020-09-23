@@ -5,124 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/scripts/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/apis/games.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/apis/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/apis/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji_01@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/common/icon_kimoji_01@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Bitmap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Bitmap@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Bitmap@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/EK9uZH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/EK9uZH@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/EK9uZH@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Layer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Layer1@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/Layer1@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/avatar@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/avatar@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/wEHPo8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/wEHPo8@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/images/mock/wEHPo8@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/getSvg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/arrow_down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/arrow_right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/arrow_up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/diamond.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_+.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_-.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_currency.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_featured.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_featured_selected.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_gem.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_gem_selected.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_grade_line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_grade_surface.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_help.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_invisible.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_kimoji.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_language.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_limit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_list_selected.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_site.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_site_selected.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_terms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_transaction_password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/icon_visible.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/more.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/ApkController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/Col.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/Container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/LoadingIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/ModalCodePush.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/ModalIAP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/ModalSdk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/ProgressBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/Row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/StarRate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/SvgIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/TitleBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/VideoFullScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/mobx/download.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/mobx/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/mobx/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/mobx/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Auth/ForgetPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Auth/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Auth/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Auth/Welcome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Diamond /Diamond.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Diamond /PurchaseRecords.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Featured/Featured.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Games/GameDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Games/GameList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/Currency.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/ForgetTransactionPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/Help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/Languages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/ResetPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/ResetTransactionPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/SetTransactionPassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/Settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/pages/Settings/Terms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/styles/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/styles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/translations/i18n.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/translations/i18n/en-US.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/translations/i18n/err_code.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/translations/i18n/zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/translations/i18n/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/apkUtil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/device.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/httpUtil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/utils/storages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/widgets/GameCell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/widgets/PurchasedRecordCell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +58,7 @@
       <updated>1600763517266</updated>
       <workItem from="1600763518485" duration="1419000" />
       <workItem from="1600766073784" duration="828000" />
+      <workItem from="1600829180416" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -190,21 +74,31 @@
       <option name="project" value="LOCAL" />
       <updated>1600766467071</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: bump version 2.0.0">
+      <created>1600829266536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600829266536</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="chore: update" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update" />
+    <MESSAGE value="chore: bump version 2.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.0.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1600766466965">
+    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1600829266434">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600766466965" />
+    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600829266434" />
     <state x="250" y="237" width="937" height="448" key="Github.ShareDialog" timestamp="1600763822984">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -217,10 +111,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600767120718" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1600766469618">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1600829269610">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600766469618" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600829269610" />
     <state x="517" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600764937660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
