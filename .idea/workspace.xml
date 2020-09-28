@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="" />
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +60,8 @@
       <workItem from="1600763518485" duration="1419000" />
       <workItem from="1600766073784" duration="828000" />
       <workItem from="1600829180416" duration="696000" />
+      <workItem from="1600846750193" duration="2958000" />
+      <workItem from="1601256426867" duration="477000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -86,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600829928935</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore(2.0.2): 优化">
+      <created>1600846949260</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600846949260</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs(2.0.2): 版本号修改">
+      <created>1600846996888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600846996888</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,13 +117,19 @@
     <MESSAGE value="chore: update" />
     <MESSAGE value="chore: bump version 2.0.0" />
     <MESSAGE value="chore: update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update README.md" />
+    <MESSAGE value="chore(2.0.2): 优化" />
+    <MESSAGE value="docs(2.0.2): 版本号修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(2.0.2): 版本号修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1600829928809">
+    <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600848520608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600829928809" />
+    <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600848520608" />
+    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1600846996772">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600846996772" />
     <state x="250" y="237" width="937" height="448" key="Github.ShareDialog" timestamp="1600763822984">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -117,10 +142,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600767120718" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1600829931420">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1600853721226">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600829931420" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600853721226" />
     <state x="517" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600764937660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
