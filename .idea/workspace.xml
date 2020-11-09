@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
       <workItem from="1600829180416" duration="696000" />
       <workItem from="1600846750193" duration="2958000" />
       <workItem from="1601256426867" duration="477000" />
+      <workItem from="1601258283690" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -105,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600846996888</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="build(android): 优化打包效率">
+      <created>1601258396013</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601258396013</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: bump version 2.0.3">
+      <created>1601258502865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601258502865</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,17 +133,19 @@
     <MESSAGE value="chore: update README.md" />
     <MESSAGE value="chore(2.0.2): 优化" />
     <MESSAGE value="docs(2.0.2): 版本号修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs(2.0.2): 版本号修改" />
+    <MESSAGE value="build(android): 优化打包效率" />
+    <MESSAGE value="chore: bump version 2.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.0.3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600848520608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600848520608" />
-    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1600846996772">
+    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1601258502744">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600846996772" />
+    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601258502744" />
     <state x="250" y="237" width="937" height="448" key="Github.ShareDialog" timestamp="1600763822984">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -142,10 +158,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600767120718" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1600853721226">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1601258505156">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600853721226" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601258505156" />
     <state x="517" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600764937660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
