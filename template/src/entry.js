@@ -2,7 +2,6 @@ import 'react-native-gesture-handler'
 import React, { Component } from 'react'
 import { Provider } from '@ant-design/react-native'
 import { StatusBar } from 'react-native'
-import { inject, observer } from 'mobx-react'
 import { setColor } from 'react-native-navbar-color'
 import { DURATION, POSITION, show, TYPE } from '@react-native-hero/toast'
 import GlobalNavigation from './utils/GlobalNavigation'
@@ -10,7 +9,6 @@ import LoadingIndicator from './components/LoadingIndicator'
 import styles from './styles'
 import colors from './styles/colors'
 import apis from './apis'
-import ModalIAP from './components/ModalIAP'
 import storages from './utils/storages'
 import Router from './router'
 import ModalCodePush from './components/ModalCodePush'
@@ -37,20 +35,16 @@ global.$storage = storages
 global.$http = http
 global.$i18n = i18nUtil
 
-export default
-@inject('store')
-@observer
 class Entry extends Component {
   async componentWillMount() {
     if (Platform.OS === 'android') {
       setColor('#000000')
     }
 
-    // const userInfo = (await $storage.getData($storage.KEYS.userInfo)) || {}
-    // if (userInfo) {
-    //   // await $store.user.updateUserInfo()
-    //   // $store.user.setLogin(true)
-    // }
+    const userInfo = (await $storage.getData($storage.KEYS.userInfo)) || {}
+    if (userInfo) {
+      $store.dispatch({ type: 'user/updateUserInfo', payload: userInfo })
+    }
 
     await this.initLocale()
   }
@@ -67,7 +61,7 @@ class Entry extends Component {
       (await $storage.getData($storage.KEYS.locale)) || defaultLocale
 
     $i18n.setI18nConfig(locale)
-    await this.props.store.settings.setLocale(locale)
+    $store.dispatch({ type: 'settings/setLocale', payload: locale })
   }
 
   render() {
@@ -76,8 +70,8 @@ class Entry extends Component {
         <StatusBar
           animated
           translucent
-          barStyle="light-content"
-          backgroundColor="rgba(0,0,0,0)"
+          // barStyle="light-content"
+          // backgroundColor="rgba(0,0,0,0)"
         />
         <Router />
 
@@ -91,13 +85,9 @@ class Entry extends Component {
             global.$codepush = ref
           }}
         />
-
-        <ModalIAP
-          ref={ref => {
-            global.$iap = ref
-          }}
-        />
       </Provider>
     )
   }
 }
+
+export default Entry

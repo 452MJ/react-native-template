@@ -10,10 +10,10 @@ import {
 } from '@react-navigation/stack'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import GlobalNavigation, { navigationRef } from './utils/GlobalNavigation'
-import Welcome from './pages/Auth/Welcome'
 import { apx, isIPhoneX } from './utils/device'
 import Col from './components/Col'
 import Row from './components/Row'
+import Counter from './pages/Counter'
 
 global.$navigation = GlobalNavigation
 
@@ -99,8 +99,8 @@ function TabScreen() {
         // paddingBottom: isIPhoneX() ? apx(60) : 0,
       }}
     >
-      <Tab.Screen name="Welcome" component={Welcome} />
-      <Tab.Screen name="Settings" component={Welcome} />
+      <Tab.Screen name="Welcome" component={Counter} />
+      <Tab.Screen name="Settings" component={Counter} />
     </Tab.Navigator>
   )
 }
@@ -135,7 +135,7 @@ function Router() {
         })}
       >
         <Root.Screen name="Main" component={StackScreen} />
-        <Root.Screen name="ModalScreen" component={Welcome} />
+        <Root.Screen name="ModalScreen" component={StackScreen} />
       </Root.Navigator>
     </NavigationContainer>
   )

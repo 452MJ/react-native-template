@@ -1,11 +1,8 @@
 import React from 'react'
 import { Text, TouchableOpacity, ViewPropTypes } from 'react-native'
-import { inject, observer } from 'mobx-react'
 import { apx } from '../utils/device'
 
 export default
-@inject('store')
-@observer
 class Button extends React.Component<{
   theme?: 'light' | 'dark' | 'white',
   style?: ViewPropTypes.style,

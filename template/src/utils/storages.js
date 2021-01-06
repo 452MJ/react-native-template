@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-community/async-storage'
 
 const storage = {
   KEYS: {
+    userInfo: 'userInfo',
     locale: 'locale',
   },
   storeData: async (key, value) => {

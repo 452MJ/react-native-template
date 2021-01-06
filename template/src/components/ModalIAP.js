@@ -14,7 +14,7 @@ export default class ModalIAP extends React.PureComponent {
 
   async componentDidMount() {
     const list = await $apis.user.getIap()
-    await $store.user.setIap(list)
+    // await $store.user.setIap(list)
     const products = await RNIap.getProducts(list.map(({ id }) => id))
   }
 

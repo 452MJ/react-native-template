@@ -1,21 +1,30 @@
 import 'react-native-gesture-handler'
 import React from 'react'
-import { Provider } from 'mobx-react'
+import { Provider } from 'react-redux'
 import { lockToPortrait } from 'react-native-orientation'
-import { rootStore } from './mobx'
 import Entry from './entry'
+// eslint-disable-next-line import/named
+import { createApp } from './models/dva'
+import models from './models/index'
+import { create } from 'dva-core';
 
 console.disableYellowBox = true
-
-global.$store = rootStore
 
 if (!__DEV__) {
   global.console.log = () => {}
 }
 
 lockToPortrait()
+
+const app = create()
+models.forEach((model: any) => app.model(model))
+app.start()
+
+const store = app._store
+global.$store = app._store
+
 const App = () => (
-  <Provider store={rootStore}>
+  <Provider store={store}>
     <Entry />
   </Provider>
 )
