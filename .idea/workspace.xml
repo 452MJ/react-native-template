@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="" />
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/metro.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/metro.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Col.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Col.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/LoadingIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/LoadingIndicator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/ModalCodePush.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/ModalIAP.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ModalIAP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/ProgressBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ProgressBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Row.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/SvgIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/SvgIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/TitleBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/TitleBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/entry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/pages/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/pages/Counter.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,12 +28,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1hrJwcJ4GqY1siBpXMsC8PtkxRy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/template/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -36,12 +46,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template/src/components" />
       <recent name="$PROJECT_DIR$/template" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -61,6 +71,8 @@
       <workItem from="1601256426867" duration="477000" />
       <workItem from="1601258283690" duration="288000" />
       <workItem from="1604905684887" duration="228000" />
+      <workItem from="1609903348136" duration="122000" />
+      <workItem from="1611797642902" duration="767000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -125,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604905820232</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chore: bump version 2.1.1">
+      <created>1609903434176</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609903434176</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,36 +161,7 @@
     <MESSAGE value="build(android): 优化打包效率" />
     <MESSAGE value="chore: bump version 2.0.3" />
     <MESSAGE value="fix: codepush" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: codepush" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600848520608">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="422" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1600848520608" />
-    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1604905820025">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1604905820025" />
-    <state x="250" y="237" width="937" height="448" key="Github.ShareDialog" timestamp="1600763822984">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="250" y="237" width="937" height="448" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1600763822984" />
-    <state x="527" y="81" key="Github.UntrackedFilesDialog" timestamp="1600763842579">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="527" y="81" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600763842579" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1600767120718">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600767120718" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1604905829318">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1604905829318" />
-    <state x="517" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600764937660">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="517" y="367" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1600764937660" />
+    <MESSAGE value="chore: bump version 2.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.1.1" />
   </component>
 </project>
