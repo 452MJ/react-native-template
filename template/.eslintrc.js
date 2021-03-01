@@ -27,7 +27,7 @@ module.exports = {
     $colors: true,
     $loading: true,
     $toast: true,
-    $apis: true,
+    $services: true,
     $navigation: true,
     $store: true,
     $pomelo: true,

@@ -8,7 +8,7 @@ import GlobalNavigation from './utils/GlobalNavigation'
 import LoadingIndicator from './components/LoadingIndicator'
 import styles from './styles'
 import colors from './styles/colors'
-import apis from './services'
+import services from './services'
 import storages from './utils/storages'
 import Router from './router'
 import ModalCodePush from './components/ModalCodePush'
@@ -29,7 +29,7 @@ global.$toast = {
 }
 global.$styles = styles
 global.$colors = colors
-global.$apis = apis
+global.$services = services
 global.$navigation = GlobalNavigation
 global.$storage = storages
 global.$http = http

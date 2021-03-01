@@ -1,4 +1,11 @@
-import { Dimensions, Keyboard, Platform, StatusBar } from 'react-native'
+import {
+  Dimensions,
+  Keyboard,
+  Platform,
+  StatusBar,
+  TouchableOpacity,
+  TouchableNativeFeedback,
+} from 'react-native'
 
 // iPhoneX
 const X_WIDTH = 375
@@ -8,9 +15,9 @@ const { width, height } = Dimensions.get('window')
 
 export function isIPhoneX() {
   return (
-    Platform.OS === 'ios' &&
-    ((height >= X_HEIGHT && width >= X_WIDTH) ||
-      (height >= X_WIDTH && width >= X_HEIGHT))
+      Platform.OS === 'ios' &&
+      ((height >= X_HEIGHT && width >= X_WIDTH) ||
+          (height >= X_WIDTH && width >= X_HEIGHT))
   )
 }
 
@@ -32,8 +39,9 @@ export const apxInt = (size = 0) => parseInt((deviceWidth / 750) * size)
 
 export const dismissKeyboard = Keyboard.dismiss
 
-const titleBarHeight = statusBarHeight + apx(88)
+const titleBarHeight = statusBarHeight + apx(94)
 const tabBarHeight = (isIPhoneX() ? 40 : 0) + apx(86)
+const IPXBarHeight = isIPhoneX() ? 20 : 0
 
 export {
   deviceWidth,
@@ -41,4 +49,5 @@ export {
   statusBarHeight,
   titleBarHeight,
   tabBarHeight,
+  IPXBarHeight,
 }

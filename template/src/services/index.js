@@ -1,6 +1,6 @@
 import user from './user'
 
-const apis = {
+const services = {
   user,
 }
-export default apis
+export default services
