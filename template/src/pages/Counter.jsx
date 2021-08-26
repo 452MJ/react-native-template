@@ -5,13 +5,13 @@ import Touchable from '../components/Touchable'
 
 function Counter() {
   return (
-    <>
-      <SafeAreaView>
-        <Touchable onPress={() => null}>
-          <Text style={{}}>1111</Text>
-        </Touchable>
-      </SafeAreaView>
-    </>
+      <>
+        <SafeAreaView>
+          <Touchable onPress={() => $navigation.navigate('Counter')}>
+            <Text style={{}}>1111</Text>
+          </Touchable>
+        </SafeAreaView>
+      </>
   )
 }
 
