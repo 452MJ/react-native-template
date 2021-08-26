@@ -6,15 +6,19 @@ import codePush from 'react-native-code-push'
 import { apx } from '../utils/device'
 import ProgressBar from './ProgressBar'
 import Button from './Button'
+import Touchable from './Touchable'
 
 export default class ModalCodePush extends React.PureComponent {
-  state = {
-    visible: false,
-    patch: {},
-    current: 0,
-    total: 0,
-    progress: 0,
-    downloading: false,
+  constructor(props) {
+    super(props)
+    this.state = {
+      visible: false,
+      patch: {},
+      current: 0,
+      total: 0,
+      progress: 0,
+      downloading: false,
+    }
   }
 
   componentDidMount() {
@@ -24,9 +28,9 @@ export default class ModalCodePush extends React.PureComponent {
 
   check = async (showTips = false) => {
     try {
-      if (showTips) {
-        $loading.show(true)
-      }
+      // if (showTips) {
+      //   $loading.show(true)
+      // }
 
       await codePush.notifyAppReady()
 
@@ -76,7 +80,7 @@ export default class ModalCodePush extends React.PureComponent {
               fontSize: apx(36),
               fontWeight: '500',
               marginTop: apx(20),
-              color: '#FF0062',
+              color: '#FEBE18',
             }}
           >
             发现新版本
@@ -85,7 +89,7 @@ export default class ModalCodePush extends React.PureComponent {
             style={{
               fontSize: apx(22),
               marginVertical: apx(20),
-              color: '#1E0E02',
+              color: '#323F4B',
             }}
           >
             新版本 {DeviceInfo.getVersion()} ({label})
@@ -98,14 +102,14 @@ export default class ModalCodePush extends React.PureComponent {
                   textAlign: 'center',
                   marginBottom: apx(20),
                   fontSize: apx(26),
-                  color: '#333',
+                  color: '#617485',
                 }}
               >
                 {this.state.current}MB / {this.state.total}MB
               </Text>
               <ProgressBar
                 progress={this.state.progress}
-                activeColor="#FF0062"
+                activeColor="#FEBE18"
                 width={apx(452)}
                 height={apx(20)}
               />
@@ -114,15 +118,18 @@ export default class ModalCodePush extends React.PureComponent {
             <View style={{ alignItems: 'center' }}>
               <Button
                 text="立即更新"
-                style={{ width: apx(452), height: apx(80) }}
+                theme="gold"
+                contentContainerStyle={{ width: apx(452), height: apx(80) }}
                 textStyle={{ fontSize: apx(26) }}
                 onPress={this.startDownload}
               />
 
-              <TouchableOpacity
+              <Touchable
                 style={{
-                  width: apx(452),
                   marginBottom: apx(18),
+                }}
+                contentContainerStyle={{
+                  width: apx(452),
                   paddingVertical: apx(30),
                   alignItems: 'center',
                 }}
@@ -131,13 +138,13 @@ export default class ModalCodePush extends React.PureComponent {
                 <Text
                   style={{
                     fontSize: apx(26),
-                    color: '#FF0062',
+                    color: '#FEBE18',
                     textAlign: 'center',
                   }}
                 >
                   稍后更新
                 </Text>
-              </TouchableOpacity>
+              </Touchable>
             </View>
           )}
         </View>
@@ -176,20 +183,15 @@ export default class ModalCodePush extends React.PureComponent {
       })
 
     this.setState({ visible: false, downloading: false }, () => {
-      setTimeout(
-        () => {
-          newPatch
-            .install(codePush.InstallMode.IMMEDIATE)
-            .then(() => {
-              codePush.allowRestart()
-              codePush.restartApp()
-            })
-            .catch(err => {
-              console.log(err)
-            })
-        },
-        Platform.OS === 'ios' ? 0 : 1000
-      )
+      newPatch
+        .install(codePush.InstallMode.IMMEDIATE)
+        .then(() => {
+          codePush.allowRestart()
+          codePush.restartApp()
+        })
+        .catch(err => {
+          console.log(err)
+        })
     })
   }
 }

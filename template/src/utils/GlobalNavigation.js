@@ -7,21 +7,21 @@ import { StackActions, CommonActions } from '@react-navigation/native'
 export const navigationRef = React.createRef()
 let lastTimestamp = new Date().getTime()
 const GlobalNavigation = {
-  navigate(routeName, params) {
+  navigate(routeName, params={}) {
     if (new Date().getTime() - lastTimestamp > 500) {
       lastTimestamp = new Date().getTime()
       navigationRef.current.navigate(routeName, params)
     }
   },
 
-  push(routeName, params) {
+  push(routeName, params={}) {
     if (new Date().getTime() - lastTimestamp > 500) {
       lastTimestamp = new Date().getTime()
       navigationRef.current?.dispatch(StackActions.push(routeName, params))
     }
   },
 
-  reset(routeName, params) {
+  reset(routeName, params={}) {
     navigationRef.current?.dispatch(
       CommonActions.reset({
         index: 0,
@@ -30,7 +30,7 @@ const GlobalNavigation = {
     )
   },
 
-  replace(routeName, params) {
+  replace(routeName, params={}) {
     navigationRef.current?.dispatch(StackActions.replace(routeName, params))
   },
 

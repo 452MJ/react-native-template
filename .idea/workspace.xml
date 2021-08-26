@@ -4,8 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="chore: bump version 2.1.7">
+      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/toast_error.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/toast_info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/assets/svgs/resource/toast_success.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/components/CustomToast.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/components/Divider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/models/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/template/.flowconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/ios/Awesome.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Awesome.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Col.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Col.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/LoadingIndicator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/LoadingIndicator.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Row.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Row.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/SvgIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/SvgIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/TitleBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/TitleBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Touchable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Touchable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/entry.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/entry.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/models/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/models/dva.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/models/dva.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/models/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/pages/Counter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/pages/Counter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/utils/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/utils/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/utils/device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/utils/httpUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/utils/httpUtil.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +60,13 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pubqeuwv" />
   </component>
@@ -37,7 +81,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/template/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,8 +94,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/template/src/components" />
       <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$/template/src/components" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -76,6 +120,9 @@
       <workItem from="1614570087664" duration="1423000" />
       <workItem from="1615876654885" duration="460000" />
       <workItem from="1619228125318" duration="473000" />
+      <workItem from="1620265947074" duration="656000" />
+      <workItem from="1629943539273" duration="370000" />
+      <workItem from="1629952323387" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -231,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619228240731</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chore: bump version 2.1.7">
+      <created>1620266039960</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1620266039960</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +311,7 @@
     <MESSAGE value="chore: bump version 2.1.4" />
     <MESSAGE value="chore: bump version 2.1.5" />
     <MESSAGE value="chore: bump version 2.1.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.1.6" />
+    <MESSAGE value="chore: bump version 2.1.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.1.7" />
   </component>
 </project>

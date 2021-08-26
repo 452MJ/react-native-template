@@ -1,5 +1,5 @@
-import { createLogger } from 'redux-logger';
-import { create } from 'dva-core';
+import { createLogger } from 'redux-logger'
+import { create } from 'dva-core'
 // @ts-ignore
 let app
 

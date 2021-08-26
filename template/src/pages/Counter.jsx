@@ -1,15 +1,18 @@
-import React from "react"
-import {connect} from "react-redux"
+import React from 'react'
+import { connect } from 'react-redux'
+import { SafeAreaView, Text } from 'react-native'
+import Touchable from '../components/Touchable'
 
 function Counter() {
-  return (<>
-    <StatusBar barStyle="dark-content"/>
-    <SafeAreaView>
-      <TouchableOpacity onPress={() => $store.dispatch({type: "counter/addCounter", payload: {}})}>
-        <Text style={{color: "#fff"}}>{this.props.counter} 1111</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
-  </>)
+  return (
+    <>
+      <SafeAreaView>
+        <Touchable onPress={() => null}>
+          <Text style={{}}>1111</Text>
+        </Touchable>
+      </SafeAreaView>
+    </>
+  )
 }
 
-export default connect(({counter}) => ({counter}))(Counter)
+export default connect(state => state)(Counter)

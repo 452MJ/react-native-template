@@ -1,15 +1,19 @@
 import React, { memo } from 'react'
 import Flex from '@ant-design/react-native/lib/flex'
 import { FlexPropsType } from '@ant-design/react-native/lib/flex/PropsType'
-import { ViewPropTypes } from 'react-native'
+import { ViewStyle } from 'react-native'
 
 interface IProps extends FlexPropsType {
-  style?: ViewPropTypes.style;
+  style?: ViewStyle;
 }
 
 function Row(props: IProps) {
   const { children, ...other } = props
-  return <Flex {...other}>{children}</Flex>
+  return (
+    <Flex justify="center" align="center" {...other}>
+      {children}
+    </Flex>
+  )
 }
 
 export default memo(Row)

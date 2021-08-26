@@ -11,19 +11,14 @@ import {
 const X_WIDTH = 375
 const X_HEIGHT = 812
 
-const { width, height } = Dimensions.get('window')
-
 export function isIPhoneX() {
+  const { width, height } = Dimensions.get('window')
   return (
-      Platform.OS === 'ios' &&
-      ((height >= X_HEIGHT && width >= X_WIDTH) ||
-          (height >= X_WIDTH && width >= X_HEIGHT))
+    Platform.OS === 'ios' &&
+    ((height >= X_HEIGHT && width >= X_WIDTH) ||
+      (height >= X_WIDTH && width >= X_HEIGHT))
   )
 }
-
-const deviceWidth = width
-
-const deviceHeight = height
 
 const getStatusBarHeight = () => {
   if (Platform.OS === 'ios') {
@@ -34,20 +29,25 @@ const getStatusBarHeight = () => {
 
 const statusBarHeight = getStatusBarHeight()
 
-export const apx = (size = 0) => (deviceWidth / 750) * size
-export const apxInt = (size = 0) => parseInt((deviceWidth / 750) * size)
+export const apx = (size = 0) => {
+  let width = Dimensions.get('window').width
+  if (width > 600) {
+    width = 600
+  }
+  return (width / 750) * size
+}
+export const apxInt = (size = 0) => {
+  let width = Dimensions.get('window').width
+  if (width > 600) {
+    width = 600
+  }
+  return parseInt((width / 750) * size)
+}
 
 export const dismissKeyboard = Keyboard.dismiss
 
 const titleBarHeight = statusBarHeight + apx(94)
-const tabBarHeight = (isIPhoneX() ? 40 : 0) + apx(86)
 const IPXBarHeight = isIPhoneX() ? 20 : 0
+const tabBarHeight = (isIPhoneX() ? apx(60) : 0) + apx(98)
 
-export {
-  deviceWidth,
-  deviceHeight,
-  statusBarHeight,
-  titleBarHeight,
-  tabBarHeight,
-  IPXBarHeight,
-}
+export { statusBarHeight, titleBarHeight, tabBarHeight, IPXBarHeight }

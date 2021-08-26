@@ -1,8 +1,10 @@
-import React, {memo} from 'react'
-
-import {Text, TouchableOpacity, View} from 'react-native';
-import {Flex} from '@ant-design/react-native';
-import {apx, statusBarHeight} from '../utils/device';
+import React, { memo } from 'react'
+import { ImageBackground, Text, TouchableOpacity, View } from 'react-native'
+import { apx, statusBarHeight } from '../utils/device'
+import SvgIcon from './SvgIcon'
+import { FontFamily } from '../styles'
+import Row from './Row'
+import Touchable from './Touchable'
 
 interface IProps {
   title: string;
@@ -10,75 +12,59 @@ interface IProps {
   renderRight?: React.ReactNode;
 }
 
-const TitleBar = ({
-                    title,
-                    renderLeft = (
-                        <TouchableOpacity
-                            style={{
-                              width: apx(89),
-                              height: apx(94),
-                              justifyContent: 'center',
-                              alignItems: 'center',
-                            }}
-                            onPress={() => {
-                              $navigation.goBack()
-                            }}
-                        >
-                          <SvgIcon
-                              icon="icon_back"
-                              // source={require('../assets/images/common/back.png')}
-                              style={{width: apx(28), height: apx(27)}}
-                          />
-                        </TouchableOpacity>
-                    ),
-                    renderRight = null,
-                  }: IProps) => (
-    <View
+function TitleBar({
+  title,
+  renderLeft = (
+    <Touchable
+      contentContainerStyle={{
+        width: apx(88),
+        height: apx(92),
+        paddingLeft: apx(40),
+      }}
+      align="start"
+      onPress={() => {
+        $navigation.goBack()
+      }}
+    >
+      <SvgIcon icon="icon_back" style={{ width: apx(15), height: apx(24) }} />
+    </Touchable>
+  ),
+  renderRight = null,
+}: IProps) {
+  return (
+    <Row
+      style={{
+        width: apx(750),
+        backgroundColor: '#fff',
+        paddingTop: statusBarHeight,
+      }}
+    >
+      <Row
         style={{
           width: apx(750),
-          backgroundColor: 'rgba(0,0,0,0.78)',
-          paddingTop: statusBarHeight,
-          position: 'absolute',
-          top: 0,
-          zIndex: 999,
+          height: apx(92),
+          paddingLeft: renderLeft ? apx(0) : apx(32),
+          paddingRight: renderRight ? apx(0) : apx(32),
         }}
-    >
-      <Flex style={{height: apx(88)}} justify="center">
-        <View
-            style={{
-              position: 'absolute',
-              left: 0,
-            }}
-        >
-          {renderLeft}
-        </View>
-
+      >
+        {renderLeft}
         <Text
-            style={{
-              width: apx(450),
-              fontSize: apx(40),
-              fontWeight: 'bold',
-              color: '#FEFEFE',
-              textAlign: 'center',
-            }}
-            numberOfLines={1}
+          style={{
+            flex: 1,
+            fontSize: apx(34),
+            fontWeight: '600',
+            fontFamily: FontFamily.Bold,
+            color: '#323F4B',
+            textAlign: 'left',
+          }}
+          numberOfLines={1}
         >
           {title}
         </Text>
-        <View
-            style={{
-              position: 'absolute',
-              right: 0,
-            }}
-        >
-          {renderRight}
-        </View>
-      </Flex>
-    </View>
-)
+        {renderRight}
+      </Row>
+    </Row>
+  )
+}
 
 export default memo(TitleBar)
-
-
-
-

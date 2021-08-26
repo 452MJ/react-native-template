@@ -1,88 +1,73 @@
-import React, { PureComponent } from 'react'
+import React, { forwardRef, useImperativeHandle, useState } from 'react'
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
-import { apx, deviceHeight } from '../utils/device'
+import { connect } from 'react-redux'
+import { apx } from '../utils/device'
 
-export default class LoadingIndicator extends PureComponent {
-  static propTypes = {}
+const LoadingIndicator = forwardRef((props, ref) => {
+  const [visible, setVisible] = useState(false)
+  const [mask, setMask] = useState(true)
 
-  static defaultProps = {}
+  useImperativeHandle(ref, () => ({
+    show: (enableMask?: boolean) => {
+      setVisible(true)
+      setMask(enableMask || false)
+    },
+    hide: () => {
+      setVisible(false)
+    },
+  }))
 
-  state = {
-    isShowLoading: false,
-    mask: true,
-  }
-
-  show = async (mask = false) => {
-    // 默认显示遮罩层mask
-
-    if (this.state.isShowLoading === false) {
-      return this.setState(
-        {
-          mask,
-          isShowLoading: true,
-        },
-        () => null
-      )
-    }
+  if (!visible) {
     return null
   }
 
-  hide = async () => {
-    if (this.state.isShowLoading === true) {
-      return this.setState(
-        {
-          isShowLoading: false,
-        },
-        () => null
-      )
-    }
-    return null
-  }
-
-  render() {
-    if (this.state.isShowLoading === false) {
-      return null
-    }
-
-    return (
+  return (
+    <View
+      style={
+        mask
+          ? [
+              StyleSheet.absoluteFill,
+              {
+                backgroundColor: 'rgba(0,0,0,0.5)',
+                justifyContent: 'center',
+                alignItems: 'center',
+              },
+            ]
+          : {
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: '50%',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }
+      }
+    >
       <View
-        style={
-          this.state.mask
-            ? [
-                StyleSheet.absoluteFill,
-                $styles.center,
-                { backgroundColor: 'rgba(0,0,0,0.5)' },
-              ]
-            : [
-                {
-                  position: 'absolute',
-                  left: apx((750 - 170) / 2),
-                  top: apx(deviceHeight - 85),
-                },
-              ]
-        }
+        style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderRadius: apx(10),
+          width: apx(170),
+          height: apx(170),
+          backgroundColor: 'rgba(0,0,0,0.7)',
+        }}
       >
-        <View
+        <ActivityIndicator size="large" color="white" />
+        <Text
           style={{
-            ...$styles.center,
-            borderRadius: apx(10),
-            width: apx(170),
-            height: apx(170),
-            backgroundColor: 'rgba(0,0,0,0.7)',
+            fontSize: apx(26),
+            marginTop: apx(10),
+            color: 'white',
           }}
         >
-          <ActivityIndicator size="large" color="white" />
-          <Text
-            style={{
-              fontSize: apx(26),
-              marginTop: apx(10),
-              color: 'white',
-            }}
-          >
-            Loading...
-          </Text>
-        </View>
+          Loading...
+        </Text>
       </View>
-    )
-  }
-}
+    </View>
+  )
+})
+
+export default connect(state => state, null, null, { forwardRef: true })(
+  LoadingIndicator
+)

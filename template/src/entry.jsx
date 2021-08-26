@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import { Provider } from '@ant-design/react-native'
 import { StatusBar } from 'react-native'
 import { setColor } from 'react-native-navbar-color'
-import { DURATION, POSITION, show, TYPE } from '@react-native-hero/toast'
 import GlobalNavigation from './utils/GlobalNavigation'
 import LoadingIndicator from './components/LoadingIndicator'
 import styles from './styles'
@@ -14,19 +13,8 @@ import Router from './router'
 import ModalCodePush from './components/ModalCodePush'
 import http from './utils/httpUtil'
 import i18nUtil from './translations/i18n'
+import CustomToast from './components/CustomToast'
 
-global.$toast = {
-  show: msg => {
-    show({
-      text: msg,
-      // optional
-      // as shown below, these are the default values
-      type: TYPE.TEXT,
-      duration: DURATION.SHORT,
-      position: POSITION.CENTER,
-    })
-  },
-}
 global.$styles = styles
 global.$colors = colors
 global.$services = services
@@ -78,6 +66,21 @@ class Entry extends Component {
         <LoadingIndicator
           ref={ref => {
             global.$loading = ref
+          }}
+        />
+        <CustomToast
+          ref={ref => {
+            global.$toast = {
+              info: msg => {
+                ref.info(msg)
+              },
+              success: msg => {
+                ref.success(msg)
+              },
+              error: msg => {
+                ref.error(msg)
+              },
+            }
           }}
         />
         <ModalCodePush

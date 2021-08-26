@@ -10,7 +10,7 @@ import {
 } from '@react-navigation/stack'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'
 import GlobalNavigation, { navigationRef } from './utils/GlobalNavigation'
-import { apx, isIPhoneX } from './utils/device'
+import { apx, IPXBarHeight, isIPhoneX } from './utils/device'
 import Col from './components/Col'
 import Row from './components/Row'
 import Counter from './pages/Counter'
@@ -22,8 +22,10 @@ const Tab = createMaterialTopTabNavigator()
 const renderTabBar = ({ state, descriptors, navigation }) => (
   <Row
     style={{
-      backgroundColor: '#040308',
-      paddingBottom: isIPhoneX() ? apx(60) : 0,
+      backgroundColor: '#fff',
+      width: apx(750),
+
+      paddingBottom: IPXBarHeight,
     }}
   >
     {state.routes.map((route, index) => {
@@ -94,10 +96,11 @@ function TabScreen() {
       tabBar={renderTabBar}
       keyboardDismissMode="on-drag"
       initialLayout={{ width: Dimensions.get('window').width }}
-      sceneContainerStyle={{
-        backgroundColor: '#000',
-        // paddingBottom: isIPhoneX() ? apx(60) : 0,
-      }}
+      sceneContainerStyle={
+        {
+          // paddingBottom: isIPhoneX() ? apx(60) : 0,
+        }
+      }
     >
       <Tab.Screen name="Welcome" component={Counter} />
       <Tab.Screen name="Settings" component={Counter} />
