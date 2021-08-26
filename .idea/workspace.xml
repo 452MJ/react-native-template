@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/template/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +55,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template/src" />
+      <recent name="$PROJECT_DIR$/template/android/app/src/main" />
       <recent name="$PROJECT_DIR$/template" />
       <recent name="$PROJECT_DIR$/template/src/components" />
       <recent name="$PROJECT_DIR$" />
@@ -87,6 +87,7 @@
       <workItem from="1629943539273" duration="370000" />
       <workItem from="1629952323387" duration="916000" />
       <workItem from="1629957161787" duration="665000" />
+      <workItem from="1629966599120" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -263,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629957218404</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="chore: bump version 2.2.3">
+      <created>1629966890663</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1629966890663</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,6 +300,7 @@
     <MESSAGE value="chore: bump version 2.1.7" />
     <MESSAGE value="chore: bump version 2.2.1" />
     <MESSAGE value="chore: bump version 2.2.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.2.2" />
+    <MESSAGE value="chore: bump version 2.2.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.2.3" />
   </component>
 </project>

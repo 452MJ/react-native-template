@@ -54,7 +54,6 @@ function Entry() {
       $store.dispatch({ type: 'settings/setLocale', payload: locale })
     }
 
-    console.log(1)
     init()
   }, [])
 
