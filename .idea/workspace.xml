@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/pages/Counter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/pages/Counter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <workItem from="1620265947074" duration="656000" />
       <workItem from="1629943539273" duration="370000" />
       <workItem from="1629952323387" duration="916000" />
-      <workItem from="1629957161787" duration="47000" />
+      <workItem from="1629957161787" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -260,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629953113787</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="chore: bump version 2.2.2">
+      <created>1629957218404</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1629957218404</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +291,7 @@
     <MESSAGE value="chore: bump version 2.1.6" />
     <MESSAGE value="chore: bump version 2.1.7" />
     <MESSAGE value="chore: bump version 2.2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.2.1" />
+    <MESSAGE value="chore: bump version 2.2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.2.2" />
   </component>
 </project>

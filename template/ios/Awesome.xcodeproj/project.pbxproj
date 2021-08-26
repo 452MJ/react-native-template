@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* AwesomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeTests.m */; };
 		3314BBCE2EBBFD71190E492F /* libPods-Awesome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E942D5E7A821FE4487285F24 /* libPods-Awesome.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C420D60B26D776AF00287D1D /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C420D60A26D776AE00287D1D /* AppCenter-Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4AAEBC2ED025727B1618144A /* Pods-Awesome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome.release.xcconfig"; path = "Target Support Files/Pods-Awesome/Pods-Awesome.release.xcconfig"; sourceTree = "<group>"; };
 		4CF541334F57707DB75114B3 /* Pods-Awesome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome.debug.xcconfig"; path = "Target Support Files/Pods-Awesome/Pods-Awesome.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Awesome/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C420D60A26D776AE00287D1D /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "Awesome/AppCenter-Config.plist"; sourceTree = "<group>"; };
 		C63CB553AA043FEE28F9BA77 /* Pods-Awesome-AwesomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-AwesomeTests.debug.xcconfig"; path = "Target Support Files/Pods-Awesome-AwesomeTests/Pods-Awesome-AwesomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D50EDA5778497FC61A1DE1ED /* libPods-Awesome-AwesomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome-AwesomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E942D5E7A821FE4487285F24 /* libPods-Awesome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 		13B07FAE1A68108700A75B9A /* Awesome */ = {
 			isa = PBXGroup;
 			children = (
+				C420D60A26D776AE00287D1D /* AppCenter-Config.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -326,6 +329,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C420D60B26D776AF00287D1D /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
