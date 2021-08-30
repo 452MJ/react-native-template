@@ -1,17 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { SafeAreaView, Text } from 'react-native'
+import { Text } from 'react-native'
 import Touchable from '../components/Touchable'
+import Container from '../components/Container'
 
 function Counter() {
   return (
-      <>
-        <SafeAreaView>
-          <Touchable onPress={() => $navigation.navigate('Counter')}>
-            <Text style={{}}>1111</Text>
-          </Touchable>
-        </SafeAreaView>
-      </>
+      <Container style={{ flex: 1, justifyContent: 'center' }}>
+        <Touchable onPress={() => $navigation.navigate('Counter')}>
+          <Text style={{}}>1111</Text>
+        </Touchable>
+      </Container>
   )
 }
 
