@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="" />
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,13 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pubqeuwv" />
@@ -84,6 +93,8 @@
       <workItem from="1629968695493" duration="100000" />
       <workItem from="1630314720912" duration="204000" />
       <workItem from="1630316730093" duration="136000" />
+      <workItem from="1630379221641" duration="412000" />
+      <workItem from="1630400724046" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -281,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630316782908</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="chore: bump version 2.3.0">
+      <created>1630379379290</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1630379379291</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +331,7 @@
     <MESSAGE value="chore: bump version 2.2.3" />
     <MESSAGE value="chore: bump version 2.2.4" />
     <MESSAGE value="chore: bump version 2.2.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.2.5" />
+    <MESSAGE value="chore: bump version 2.3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.3.0" />
   </component>
 </project>
