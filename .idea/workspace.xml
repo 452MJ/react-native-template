@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="" />
+    <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/babel.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,13 +23,6 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="master" />
-      </list>
-    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pubqeuwv" />
@@ -94,6 +90,8 @@
       <workItem from="1630379221641" duration="412000" />
       <workItem from="1630400724046" duration="599000" />
       <workItem from="1630923133822" duration="93000" />
+      <workItem from="1631690098966" duration="158000" />
+      <workItem from="1631767380708" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -305,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630923168547</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="chore: bump version 2.3.2">
+      <created>1631690168957</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1631690168957</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +319,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="chore: update" />
     <MESSAGE value="chore: bump version 2.0.0" />
     <MESSAGE value="chore: update README.md" />
     <MESSAGE value="chore(2.0.2): 优化" />
@@ -339,6 +343,7 @@
     <MESSAGE value="chore: bump version 2.2.5" />
     <MESSAGE value="chore: bump version 2.3.0" />
     <MESSAGE value="chore: bump version 2.3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.3.1" />
+    <MESSAGE value="chore: bump version 2.3.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.3.2" />
   </component>
 </project>
