@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services' // <- Add this line
 
 import com.android.build.OutputFile
 
@@ -43,7 +44,7 @@ import com.android.build.OutputFile
  *   devDisabledInStaging: true,
  *   // The configuration property can be in the following formats
  *   //         'devDisabledIn${productFlavor}${buildType}'
- *   //         'devDisabledIn${buildType}'
+ *   //     NotoSansCJKsc-Regular.ttf    'devDisabledIn${buildType}'
  *
  *   // the root of your project, i.e. where "package.json" lives
  *   root: "../../",
@@ -78,7 +79,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    enableHermes: true,  // clean and rebuild if changing
+        enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -120,9 +121,18 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
 def enableHermes = project.ext.react.get("enableHermes", false);
+/**
+ * Architectures to build native code for in debug.
+ */
+def nativeArchitectures = project.getProperties().get("reactNativeDebugArchitectures")
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
 
     defaultConfig {
         applicationId "com.awesome"
@@ -130,13 +140,22 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         multiDexEnabled true
         missingDimensionStrategy 'react-native-camera', 'general', 'mlkit'
+        vectorDrawables.useSupportLibrary = true
 
-        versionName ''
+        versionName "";
+        // release versionCode
         def code = new Date().format("yyMMddHHmm")
         versionCode code.toInteger();
 
         resValue 'string', "CODE_PUSH_APK_BUILD_TIME", String.format("\"%d\"", System.currentTimeMillis())
     }
+
+    ndkVersion "19.2.5345600"
+
+    packagingOptions {
+        exclude "lib/arm64-v8a/librealm-jni.so"
+    }
+
     splits {
         abi {
             reset()
@@ -153,15 +172,27 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('release.keystore')
+            storePassword 'android'
+            keyAlias 'androidreleasekey'
+            keyPassword 'android'
+        }
     }
     buildTypes {
         debug {
+            applicationIdSuffix '.dev.test'
             signingConfig signingConfigs.debug
             resValue "string", "app_name", '"Awesome dev"'
             resValue "string", "CodePushDeploymentKey", '""'
             applicationIdSuffix '.dev'
             versionNameSuffix '1.0.0'
 //            resValue "string", "CodePushServerUrl", '""'
+            if (nativeArchitectures) {
+                ndk {
+                    abiFilters nativeArchitectures.split(',')
+                }
+            }
         }
         releaseBeta {
             applicationIdSuffix ".beta"
@@ -177,32 +208,25 @@ android {
             matchingFallbacks = ['release']
         }
         releaseProd {
-            applicationIdSuffix ".prod"
-            versionNameSuffix '1.0.0'
+            versionNameSuffix '1.2.3'
             resValue "string", "CodePushDeploymentKey", '""'
 //            resValue "string", "CodePushServerUrl", '""'
-            resValue "string", "app_name", '"Awesome Prod"'
-            signingConfig signingConfigs.debug
-            minifyEnabled true
-            shrinkResources true
-            pseudoLocalesEnabled true
-            zipAlignEnabled true
+            resValue "string", "app_name", '"Awesome"'
+            signingConfig signingConfigs.release
+            minifyEnabled false
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
             // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
             // Add the following line if not already there
             matchingFallbacks = ['release']
+
         }
         release {
-            applicationIdSuffix ".prod"
             versionNameSuffix '1.0.0'
             resValue "string", "CodePushDeploymentKey", '""'
 //            resValue "string", "CodePushServerUrl", '""'
-            resValue "string", "app_name", '"Awesome Prod"'
-            signingConfig signingConfigs.debug
-            minifyEnabled true
-            shrinkResources true
-            pseudoLocalesEnabled true
-            zipAlignEnabled true
+            resValue "string", "app_name", '"Awesome"'
+            signingConfig signingConfigs.release
+            minifyEnabled false
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
             // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
             // Add the following line if not already there
@@ -226,16 +250,16 @@ android {
             println output
             def buildType = variant.buildType.name
             def env = ''
-            if (buildType == 'debug'){
+            if (buildType == 'debug') {
                 env = 'dev'
             }
-            if (buildType == 'releaseBeta'){
+            if (buildType == 'releaseBeta') {
                 env = 'beta'
             }
-            if (buildType == 'releaseProd'){
+            if (buildType == 'releaseProd') {
                 env = 'prod'
             }
-            if (buildType == 'release'){
+            if (buildType == 'release') {
                 env = 'prod'
             }
             def fileName = "awesome_${env}_${variant.versionName}${abi != null ? ".${abi}" : ''}.apk"
@@ -265,24 +289,26 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation 'androidx.multidex:multidex:2.0.1'
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
-      exclude group:'com.facebook.fbjni'
+        exclude group: 'com.facebook.fbjni'
     }
 
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
-        exclude group:'com.squareup.okhttp3', module:'okhttp'
+        exclude group: 'com.facebook.flipper'
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     }
 
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
-        exclude group:'com.facebook.flipper'
+        exclude group: 'com.facebook.flipper'
     }
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
-        implementation files(hermesPath + "hermes-release.aar")
+        debugImplementation files(hermesPath + "hermes-debug.aar")
+        releaseImplementation files(hermesPath + "hermes-release.aar")
     } else {
         implementation jscFlavor
     }
