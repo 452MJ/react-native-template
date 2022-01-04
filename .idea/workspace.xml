@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/template/.flowconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/template/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/ios/Awesome/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Awesome/Info.plist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -29,7 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
-    <option name="projectConfigVersion" value="2" />
+    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
@@ -40,6 +39,9 @@
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pubqeuwv" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1hrJwcJ4GqY1siBpXMsC8PtkxRy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/template/android/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,7 +109,10 @@
       <workItem from="1631690098966" duration="158000" />
       <workItem from="1631767380708" duration="629000" />
       <workItem from="1632381641324" duration="396000" />
-      <workItem from="1637811036834" duration="1005000" />
+      <workItem from="1637811036834" duration="1095000" />
+      <workItem from="1637812174513" duration="670000" />
+      <workItem from="1641279795145" duration="317000" />
+      <workItem from="1641280128382" duration="396000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -340,16 +345,33 @@
       <option name="project" value="LOCAL" />
       <updated>1632381998901</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="chore: bump version 2.5.0">
+      <created>1637812065696</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1637812065696</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="chore(2.0.2): 优化" />
     <MESSAGE value="docs(2.0.2): 版本号修改" />
     <MESSAGE value="build(android): 优化打包效率" />
     <MESSAGE value="chore: bump version 2.0.3" />
@@ -374,6 +396,7 @@
     <MESSAGE value="chore: bump version 2.3.2" />
     <MESSAGE value="chore: bump version 2.3.3" />
     <MESSAGE value="chore: bump version 2.4.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.4.0" />
+    <MESSAGE value="chore: bump version 2.5.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.5.0" />
   </component>
 </project>
