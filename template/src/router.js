@@ -132,10 +132,10 @@ function Router() {
   return (
       <NavigationContainer ref={navigationRef}>
         <Root.Navigator
-            mode="modal"
             screenOptions={({ route, navigation }) => ({
               headerShown: false,
               gestureEnabled: false,
+              presentation: "modal"
             })}
         >
           <Root.Screen name="Main" component={StackScreen} />

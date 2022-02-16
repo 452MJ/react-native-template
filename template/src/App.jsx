@@ -3,13 +3,13 @@ import React, { useEffect } from 'react'
 import { Provider } from 'react-redux'
 import { lockToPortrait } from 'react-native-orientation'
 import { create } from 'dva-core'
-import { Dimensions, Platform, UIManager, View } from 'react-native'
+import { Dimensions, LogBox, Platform, UIManager, View } from 'react-native'
 import Entry from './entry'
 // eslint-disable-next-line import/named
 import { createApp } from './models/dva'
 import models from './models/index'
 
-console.disableYellowBox = true
+LogBox.ignoreAllLogs(true)
 
 if (!__DEV__) {
   global.console.log = () => {}
@@ -25,8 +25,8 @@ const store = app._store
 global.$store = app._store
 
 if (
-  Platform.OS === 'android' &&
-  UIManager.setLayoutAnimationEnabledExperimental
+    Platform.OS === 'android' &&
+    UIManager.setLayoutAnimationEnabledExperimental
 ) {
   UIManager.setLayoutAnimationEnabledExperimental(true)
 }
@@ -47,19 +47,19 @@ const App = () => {
   }
 
   return (
-    <View
-      style={{
-        width: '100%',
-        alignItems: 'center',
-        flex: 1,
-      }}
-    >
-      <View style={{ flex: 1, width }}>
-        <Provider store={store}>
-          <Entry />
-        </Provider>
+      <View
+          style={{
+            width: '100%',
+            alignItems: 'center',
+            flex: 1,
+          }}
+      >
+        <View style={{ flex: 1, width }}>
+          <Provider store={store}>
+            <Entry />
+          </Provider>
+        </View>
       </View>
-    </View>
   )
 }
 

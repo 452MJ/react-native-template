@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/template/.bundle/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/.ruby-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/android/app/src/main/res/drawable/rn_edit_text_material.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/.flowconfig" beforeDir="false" afterPath="$PROJECT_DIR$/template/.flowconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,11 +83,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/template/android/app" />
-      <recent name="$PROJECT_DIR$/template/ios" />
-      <recent name="$PROJECT_DIR$/template/src" />
-      <recent name="$PROJECT_DIR$/template/android/app/src/main" />
       <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$/template/android/app/src/main/res" />
+      <recent name="$PROJECT_DIR$/template/ios" />
+      <recent name="$PROJECT_DIR$/template/android/app" />
+      <recent name="$PROJECT_DIR$/template/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -116,6 +133,7 @@
       <workItem from="1643423121761" duration="1342000" />
       <workItem from="1643444999756" duration="465000" />
       <workItem from="1644981788235" duration="114000" />
+      <workItem from="1644986763426" duration="1688000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -376,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643445426117</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="chore: bump version 2.5.5">
+      <created>1644986898454</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1644986898454</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +421,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fix: codepush" />
     <MESSAGE value="chore: bump version 2.1.1" />
     <MESSAGE value="chore: use JSX" />
     <MESSAGE value="chore: bump version 2.1.2" />
@@ -421,6 +445,7 @@
     <MESSAGE value="chore: bump version 2.5.1&#10;支持iOS高刷" />
     <MESSAGE value="chore: bump version 2.5.2&#10;支持iOS高刷" />
     <MESSAGE value="chore: bump version 2.5.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.5.3" />
+    <MESSAGE value="chore: bump version 2.5.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.5.5" />
   </component>
 </project>

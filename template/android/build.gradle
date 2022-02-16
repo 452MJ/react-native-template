@@ -8,12 +8,12 @@ buildscript {
         targetSdkVersion = 30
     }
     repositories {
-//        google()
-//        jcenter()
+        google()
+        mavenLocal()
         mavenCentral()
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public'}
+//        maven { url 'https://maven.aliyun.com/repository/google' }
+//        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+//        maven { url 'http://maven.aliyun.com/nexus/content/groups/public'}
         // fcm
         maven { url "https://maven.google.com" }
     }
@@ -29,8 +29,6 @@ buildscript {
 
 allprojects {
     repositories {
-        mavenLocal()
-        mavenCentral()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url("$rootDir/../node_modules/react-native/android")
@@ -39,15 +37,19 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
-
+        mavenCentral {
+            // We don't want to fetch react-native from Maven Central as there are
+            // older versions over there.
+            content {
+                excludeGroup "com.facebook.react"
+            }
+        }
         // ADD THIS
         maven { url 'https://maven.google.com' }
 
         // ADD THIS
-//        google()
-//        jcenter()
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        google()
+        jcenter()
         maven { url 'https://www.jitpack.io' }
     }
 }
