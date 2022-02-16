@@ -63,3 +63,5 @@ buck-out/
 yarn.lock
 package-lock.json
 /src/assets/svgs/svgs.js
+/android/app/release/
+/android/app/releaseProd/

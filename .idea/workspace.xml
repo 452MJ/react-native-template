@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/template/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/ios/Awesome.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Awesome.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/ios/Awesome/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/template/ios/Awesome/AppDelegate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,8 @@
       <workItem from="1641280128382" duration="664000" />
       <workItem from="1641280913821" duration="662000" />
       <workItem from="1643423121761" duration="1342000" />
-      <workItem from="1643444999756" duration="413000" />
+      <workItem from="1643444999756" duration="465000" />
+      <workItem from="1644981788235" duration="114000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
@@ -373,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641280962673</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="chore: bump version 2.5.3">
+      <created>1643445426117</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1643445426117</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +396,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="chore: bump version 2.0.3" />
     <MESSAGE value="fix: codepush" />
     <MESSAGE value="chore: bump version 2.1.1" />
     <MESSAGE value="chore: use JSX" />
@@ -418,6 +420,7 @@
     <MESSAGE value="chore: bump version 2.5.0" />
     <MESSAGE value="chore: bump version 2.5.1&#10;支持iOS高刷" />
     <MESSAGE value="chore: bump version 2.5.2&#10;支持iOS高刷" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.5.2&#10;支持iOS高刷" />
+    <MESSAGE value="chore: bump version 2.5.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: bump version 2.5.3" />
   </component>
 </project>
