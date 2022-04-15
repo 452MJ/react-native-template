@@ -1,6 +1,6 @@
-import user from './user'
+import user from './user';
 
 const services = {
   user,
-}
-export default services
+};
+export default services;

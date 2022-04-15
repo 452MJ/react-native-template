@@ -1,41 +1,41 @@
-import { createLogger } from 'redux-logger'
-import { create } from 'dva-core'
-// @ts-ignore
-let app
+import {createLogger} from 'redux-logger';
+import {create} from 'dva-core';
 
-let store
+let app;
 
-let dispatch
+let store;
 
-let registered: boolean
+let dispatch;
 
-function createApp(opt: any) {
+let registered;
+
+function createApp(opt) {
   // redux 的日志
-  opt.onAction = [createLogger()]
-  app = create(opt)
+  opt.onAction = [createLogger()];
+  app = create(opt);
   app.use({
-    onError(err: any) {
-      console.log('dvaError', err)
+    onError(err) {
+      console.log('dvaError', err);
     },
-  })
+  });
   if (!registered) {
-    opt.models.forEach((model: any) => app.model(model))
+    opt.models.forEach(model => app.model(model));
   }
-  registered = true
-  app.start()
-  store = app._store
-  app.getStore = () => store
-  dispatch = store.dispatch
-  app.dispatch = dispatch
+  registered = true;
+  app.start();
+  store = app._store;
+  app.getStore = () => store;
+  dispatch = store.dispatch;
+  app.dispatch = dispatch;
   if (global) {
-    global.dva_app = app
+    global.dva_app = app;
   }
-  return app
+  return app;
 }
 
 export default {
   createApp,
   getDispatch() {
-    return app.dispatch
+    return app.dispatch;
   },
-}
+};
