@@ -21,7 +21,7 @@ models.forEach((model: any) => app.model(model));
 app.start();
 
 const store = app._store;
-$store = app._store;
+global.$store = app._store;
 
 if (
   Platform.OS === 'android' &&

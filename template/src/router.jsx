@@ -13,7 +13,7 @@ import Row from './components/Row';
 import Counter from './pages/Counter';
 import {MaterialTopTabBarProps} from '@react-navigation/material-top-tabs/lib/typescript/src/types';
 
-$navigation = GlobalNavigation;
+global.$navigation = GlobalNavigation;
 
 const Tab = createMaterialTopTabNavigator();
 

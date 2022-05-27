@@ -13,17 +13,17 @@ import ModalCodePush from './components/ModalCodePush';
 import http from './utils/httpUtil';
 import i18nUtil from './translations/i18n';
 
-$styles = styles;
-$colors = colors;
-$services = services;
-$navigation = GlobalNavigation;
-$storage = storages;
-$http = http;
-$i18n = i18nUtil;
+global.$styles = styles;
+global.$colors = colors;
+global.$services = services;
+global.$navigation = GlobalNavigation;
+global.$storage = storages;
+global.$http = http;
+global.$i18n = i18nUtil;
 let lastTimestamp: number = new Date().getTime();
 const TOAST_TIMEOUT: number = 1 * 1000;
 const TOAST_DURATION: number = 3;
-$toast = {
+global.$toast = {
   show: (msg: string): void => {
     if (new Date().getTime() - lastTimestamp > TOAST_TIMEOUT) {
       lastTimestamp = new Date().getTime();
@@ -87,13 +87,13 @@ function Entry(): JSX.Element {
 
       <LoadingIndicator
         ref={ref => {
-          $loading = ref;
+          global.$loading = ref;
         }}
       />
 
       <ModalCodePush
         ref={ref => {
-          $codepush = ref;
+          global.$codepush = ref;
         }}
       />
     </Provider>
