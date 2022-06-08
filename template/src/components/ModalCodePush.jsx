@@ -28,7 +28,7 @@ const ModalCodePush = forwardRef((props, ref) => {
 
   useEffect(() => {
     check()
-  })
+  }, [])
 
   const check = async (showTips = false) => {
     try {
@@ -48,7 +48,7 @@ const ModalCodePush = forwardRef((props, ref) => {
         }
       } else {
         const isSilent: boolean =
-          latestPatch.description?.indexOf('silent') === 0
+            latestPatch.description?.indexOf('silent') === 0
 
         setPatch(() => latestPatch)
         setVisible(() => isSilent === false)
@@ -71,30 +71,30 @@ const ModalCodePush = forwardRef((props, ref) => {
       return
     }
     const newPatch: LocalPackage | null = await patch
-      .download((downloadProgress: DownloadProgress) => {
-        if (!silent) {
-          setCurrent(
-            Number((downloadProgress.receivedBytes / (1024 * 1024)).toFixed(2))
-          )
-          setTotal(
-            Number((downloadProgress.totalBytes / (1024 * 1024)).toFixed(2))
-          )
-          setProgress(
-            downloadProgress.receivedBytes / downloadProgress.totalBytes
-          )
-          setDownloading(true)
-        }
-      })
-      .catch(() => {
-        if (!silent) {
-          setCurrent(0)
-          setTotal(0)
-          setProgress(0)
-          setVisible(false)
-          setDownloading(false)
-        }
-        return null
-      })
+        .download((downloadProgress: DownloadProgress) => {
+          if (!silent) {
+            setCurrent(
+                Number((downloadProgress.receivedBytes / (1024 * 1024)).toFixed(2))
+            )
+            setTotal(
+                Number((downloadProgress.totalBytes / (1024 * 1024)).toFixed(2))
+            )
+            setProgress(
+                downloadProgress.receivedBytes / downloadProgress.totalBytes
+            )
+            setDownloading(true)
+          }
+        })
+        .catch(() => {
+          if (!silent) {
+            setCurrent(0)
+            setTotal(0)
+            setProgress(0)
+            setVisible(false)
+            setDownloading(false)
+          }
+          return null
+        })
 
     setVisible(false)
     setDownloading(false)
@@ -102,18 +102,18 @@ const ModalCodePush = forwardRef((props, ref) => {
       return
     }
     newPatch
-      .install(
-        silent
-          ? codePush.InstallMode.ON_NEXT_SUSPEND
-          : codePush.InstallMode.IMMEDIATE
-      )
-      .then(() => {
-        codePush.allowRestart()
-        !silent && codePush.restartApp()
-      })
-      .catch(err => {
-        console.log(err)
-      })
+        .install(
+            silent
+                ? codePush.InstallMode.ON_NEXT_SUSPEND
+                : codePush.InstallMode.IMMEDIATE
+        )
+        .then(() => {
+          codePush.allowRestart()
+          !silent && codePush.restartApp()
+        })
+        .catch(err => {
+          console.log(err)
+        })
   }
 
   useImperativeHandle(ref, () => ({
@@ -123,103 +123,103 @@ const ModalCodePush = forwardRef((props, ref) => {
   }))
 
   return (
-    <Modal
-      isVisible={visible}
-      style={{
-        margin: 0,
-        padding: 0,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-      useNativeDriver
-    >
-      <View
-        style={{
-          width: apx(560),
-          alignItems: 'center',
-          backgroundColor: '#0D0D0D',
-          borderRadius: apx(16),
-        }}
+      <Modal
+          isVisible={visible}
+          style={{
+            margin: 0,
+            padding: 0,
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          useNativeDriver
       >
-        <Text
-          style={{
-            fontSize: apx(28),
-            color: '#E9EDEF',
-            fontWeight: '600',
-            marginTop: apx(20),
-          }}
+        <View
+            style={{
+              width: apx(560),
+              alignItems: 'center',
+              backgroundColor: '#0D0D0D',
+              borderRadius: apx(16),
+            }}
         >
-          发现新版本
-        </Text>
-        <Text
-          style={{
-            marginVertical: apx(20),
-            fontSize: apx(22),
-            color: '#E9EDEF',
-          }}
-        >
-          新版本 {DeviceInfo.getVersion()} ({patch?.label})
-        </Text>
-
-        {downloading ? (
-          <View style={{ marginBottom: apx(48) }}>
-            <Text
+          <Text
               style={{
-                textAlign: 'center',
-                marginBottom: apx(20),
-                fontSize: apx(26),
+                fontSize: apx(28),
+                color: '#E9EDEF',
+                fontWeight: '600',
+                marginTop: apx(20),
+              }}
+          >
+            发现新版本
+          </Text>
+          <Text
+              style={{
+                marginVertical: apx(20),
+                fontSize: apx(22),
                 color: '#E9EDEF',
               }}
-            >
-              {current}MB / {total}MB
-            </Text>
-            <ProgressBar
-              progress={progress}
-              activeColor="#F3E0BC"
-              width={apx(452)}
-              height={apx(20)}
-            />
-          </View>
-        ) : (
-          <View style={{ alignItems: 'center', paddingBottom: apx(32) }}>
-            <Button
-              text="立即更新"
-              theme="gold"
-              contentContainerStyle={{
-                width: apx(452),
-                height: apx(80),
-              }}
-              textStyle={{ fontSize: apx(26) }}
-              onPress={startDownload}
-            />
+          >
+            新版本 {DeviceInfo.getVersion()} ({patch?.label})
+          </Text>
 
-            {patch?.isMandatory === false && (
-              <Touchable
-                contentContainerStyle={{
-                  width: apx(452),
-                  paddingVertical: apx(30),
-                  alignItems: 'center',
-                }}
-                onPress={() => setVisible(false)}
-              >
+          {downloading ? (
+              <View style={{ marginBottom: apx(48) }}>
                 <Text
-                  style={{
-                    fontSize: apx(26),
-                    color: '#F3E0BC',
-                    textAlign: 'center',
-                  }}
+                    style={{
+                      textAlign: 'center',
+                      marginBottom: apx(20),
+                      fontSize: apx(26),
+                      color: '#E9EDEF',
+                    }}
                 >
-                  稍后更新
+                  {current}MB / {total}MB
                 </Text>
-              </Touchable>
-            )}
-          </View>
-        )}
-      </View>
-    </Modal>
+                <ProgressBar
+                    progress={progress}
+                    activeColor="#F3E0BC"
+                    width={apx(452)}
+                    height={apx(20)}
+                />
+              </View>
+          ) : (
+              <View style={{ alignItems: 'center', paddingBottom: apx(32) }}>
+                <Button
+                    text="立即更新"
+                    theme="gold"
+                    contentContainerStyle={{
+                      width: apx(452),
+                      height: apx(80),
+                    }}
+                    textStyle={{ fontSize: apx(26) }}
+                    onPress={startDownload}
+                />
+
+                {patch?.isMandatory === false && (
+                    <Touchable
+                        contentContainerStyle={{
+                          width: apx(452),
+                          paddingVertical: apx(30),
+                          alignItems: 'center',
+                        }}
+                        onPress={() => setVisible(false)}
+                    >
+                      <Text
+                          style={{
+                            fontSize: apx(26),
+                            color: '#F3E0BC',
+                            textAlign: 'center',
+                          }}
+                      >
+                        稍后更新
+                      </Text>
+                    </Touchable>
+                )}
+              </View>
+          )}
+        </View>
+      </Modal>
   )
 })
 
 export default connect(state => state, null, null, { forwardRef: true })(
-  ModalCodePush
+    ModalCodePush
 )

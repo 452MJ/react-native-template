@@ -5,52 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b393b33-9b85-4d72-84eb-e99399b3aeaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/template/src/components/Alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/AutoHeightImage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/BottomButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/CustomInput.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/CustomSwiper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/H5Verify.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/InputHighlight.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/List.template.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/TabPager.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/src/components/Button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/metro.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/metro.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Col.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/CustomToast.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Dash.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Divider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/LoadingIndicator.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ModalCodePush.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ModalImagePicker.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ProgressBar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Row.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/SvgIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/TitleBar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/Touchable.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/UploadImage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ZoomImage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/entry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/entry.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/global.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/models/actions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/models/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/models/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/pages/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/pages/Counter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/router.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/translations/i18n.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/utils/common.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/utils/device.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/utils/httpUtil.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/utils/storages.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/Col.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/Col.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ModalCodePush.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/utils/GlobalNavigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,17 +53,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/Users/jerry/zharevgames/react-native-template/template/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Settings.JavaScript",
-    "ts.external.directory.path": "/Users/jerry/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/221.5591.52/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/Users/jerry/zharevgames/react-native-template/template/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.JavaScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jerry/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/221.5591.52/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template/src/components" />
@@ -161,6 +121,7 @@
       <workItem from="1649987622251" duration="729000" />
       <workItem from="1653663161209" duration="464000" />
       <workItem from="1653666126759" duration="476000" />
+      <workItem from="1654663072733" duration="1062000" />
     </task>
     <task id="LOCAL-00001" summary="chore: update">
       <created>1600764033828</created>
