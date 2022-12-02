@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React, {useEffect} from 'react';
 import {Provider} from 'react-redux';
-import {lockToPortrait} from 'react-native-orientation';
+import Orientation from 'react-native-orientation-locker'
 // @ts-ignore
 import {create} from 'dva-core';
 import {Dimensions, LogBox, Platform, UIManager, View} from 'react-native';
@@ -13,8 +13,6 @@ LogBox.ignoreAllLogs(true);
 if (!__DEV__) {
   global.console.log = () => {};
 }
-
-lockToPortrait();
 
 const app = create();
 models.forEach((model: any) => app.model(model));
@@ -34,6 +32,7 @@ function App() {
   const onChange = (): void => {};
 
   useEffect(() => {
+    Orientation.lockToPortrait()
     const listener = Dimensions.addEventListener('change', onChange);
     return (): void => {
       listener.remove();
